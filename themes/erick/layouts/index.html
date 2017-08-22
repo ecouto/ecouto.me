@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ .Title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+</head>
+<body>
+  <section class="home">
+    <header class="home__header container">
+      <h1><strong>e</strong>couto<small>.me</small></h1>
+      <ul>
+        <li><a class="workLink" href="javascript:void(0)">work</a></li>
+      </ul>
+    </header>
+
+    <div id="home__content" class="home__content container">
+      <h2><strong>Hello!</strong> <br> my name is Erick Couto <br> <small>and I'm a front-end web developer based in São Paulo, Brazil.</small></h2>
+      <ul>
+          <li><a href="https://www.linkedin.com/in/erickcouto/" target="_blank" class="fa fa-linkedin-square" aria-hidden="true" title="erick_couto"></a></li>
+          <li><a href="https://github.com/ecouto" target="_blank" class="fa fa-github" aria-hidden="true" title="ecouto"></a></li>
+          <li><a href="https://twitter.com/erick_couto" target="_blank" class="fa fa-twitter" aria-hidden="true" title="@erick_couto"></a></li>
+          <li><a href="mailto:ecouto123@gmail.com" target="_blank" class="fa fa-envelope" aria-hidden="true" title="ecouto123@gmail.com"></a></li>
+      </ul>
+    </div>
+
+    <div id="home__work" class="home__work container hide">
+      <i class="prev fa fa-angle-double-left" aria-hidden="true"></i>
+      <i class="next fa fa-angle-double-right" aria-hidden="true"></i>
+      <div id="slider" class="job-container">
+        {{ range .Site.Params.work }} 
+        <div class="job-item">
+          <figure>
+            <a href="{{ .url }}" target="_blank"><img src="{{ .source }}" alt="{{ .title }}"></a>
+          </figure>
+          <p>{{ .description }}</p>
+          <p><strong>Agency: </strong><span>{{ .agency }}</span></p>
+          <p><strong>Year: </strong><span>{{ .year }}</span></p>
+          <p><strong>Technologies: </strong>{{ range .technologies }}<span>{{ . }}</span>{{ end }}</p>
+          <a class="visit" href="{{ .url }}" target="_blank">Website <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    
+    <footer class="home__footer container">
+      <small>{{ .Site.Params.copyright }}</small>
+    </footer>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+</body>
+</html>

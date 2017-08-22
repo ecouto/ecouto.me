@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Erick Couto - Personal website"
+theme = "erick"
+
+[params]
+  name = "Erick Couto"
+  description = "I'm a front-end web developer based in São Paulo, Brazil."
+  copyright = "Copyright © 2017 Erick Couto - ecouto.me"
+
+[[params.work]]
+  title = "PlayLearn"
+  alt = "PlayLearn"
+  source = "img/logo-playlearn.png"
+  description = "PlayLearn is a company based in São Caetano do Sul - São Paulo. They use technology to improve the ways to learn and teach."
+  url = "http://playlearn.com.br/"
+  technologies = ["Jade","Stylus","Gulp","jQuery"]
+  year = "2017"
+  agency = "-"
+
+[[params.work]]
+  title = "PlayLearn"
+  alt = "PlayLearn"
+  source = "img/logo-playlearn.png"
+  description = "PlayLearn is a company based in São Caetano do Sul - São Paulo. They use technology to improve the ways to learn and teach."
+  url = "http://playlearn.com.br/"
+  technologies = ["Jade","Stylus","Gulp","jQuery"]
+  year = "2017"
+  agency = "-"
