@@ -19,11 +19,11 @@ theme = "erick"
   agency = "-"
 
 [[params.work]]
-  title = "PlayLearn"
-  alt = "PlayLearn"
-  source = "img/logo-playlearn.png"
-  description = "PlayLearn is a company based in São Caetano do Sul - São Paulo. They use technology to improve the ways to learn and teach."
-  url = "http://playlearn.com.br/"
-  technologies = ["Jade","Stylus","Gulp","jQuery"]
+  title = "Vértice"
+  alt = "Vertice"
+  source = "img/logo-vertice.png"
+  description = "The Vértice - Paraibano Meeting of Architecture."
+  url = "https://verticeepa.com.br/"
+  technologies = ["Wordpress"]
   year = "2017"
-  agency = "-"
+  agency = "x2digital"
